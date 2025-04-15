@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 태그</title>
+    <style>
+        body{background-color: #328E6E;}
+        sapn{background-color:#E1EEBC;}
+        div.box{
+            background-color: #90C67C;
+            border-style:dotted; /*보더를 어떻게 표현 할 것인지 현재는 dotted*/
+            border-color: #67AE6E;
+            margin: 40px;
+            border-width: 30px;
+            padding: 20px;
+        }
+        div.p{
+            border-width: 3px; /*박스의 두께*/
+            border-style: dashed;/*테두리 종류*/
+            border-color: blue; /*테두리 색*/
+            border: 3px dashed blue ; 
+            /* 박스의 두께가 3px이고 점선이며 파란색 
+            즉, 단축해서 표현 가능*/
+
+            background-color: #E1EEBC;
+            text-align: center;
+        }
+        div.imgg{
+            border: 5px dotted red;
+            margin: 30px;
+            padding: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" style="text-align: center;">
+        <span style="text-align: center;">DIVDIVDIVDIV</span>
+    </div>
+    <hr>
+    <div class="p">
+        <p>박스 모델</p>
+    </div>
+    <hr>
+    <h3 style="text-align: center;">박스 모델</h3>
+    <p style="text-align: center;">margin 30px, padding 20px, border 5px의 빨간색 점선</p>
+    <hr>
+    <div class="imgg">
+        <img src="https://image.zeta-ai.io/profile-image/2949b817-43b3-4c74-904f-1daf0006840a/2a7a5a28-ec0e-46c0-b82a-4c09335cedca.jpeg?w=828&q=90&f=webp" width="70%">
+    </div>
+    <br>
+</body>
+</html>
