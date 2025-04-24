@@ -43,51 +43,70 @@
             width: 100px;
             height: 100px;
         }
+        table {
+            margin:auto; 
+        }
+        
+        table, td, th {
+            border-collapse : collapse;
+            border : 1px solid black;
+        };
     </style>
 </head>
 <body>
-    <div class="big">
-        <div class="title">block</div>
-        <div class="small">block</div>
-        <div class="small">block</div>
-        <div class="small">block</div>
-    </div>
-    
-    <div class="big">
-        <div class="title">block</div>
-        <span class="inline">inline</span>
-        <span class="inline">inline</span>
-        <span class="inline">inline</span>
-    </div>
-    
-    <div class="big">
-        <div class="title">block</div>
-        <span class="inline-box">inline-box</span>
-        <span class="inline-box">inline-box</span>
-        <span class="inline-box" style="display: inline;">inline-box (width, height 조절 X)</span>
-    </div>
-    <br>
-    <h1>3가지 박스 유형 비교</h1>
-    <hr>
-    <table border="1">
-        <tr>
-            <th>블록 박스</th>
-            <th>인라인 박스</th>
-            <th>인라인 블록 박스</th>
-        </tr>
-        <tr>
-            <th>항상 새 라인에서 시작</th>
-            <th colspan="2">새 라인에서 시작 못함<br>라인 안(inline)에 있음</th>
-        </tr>
-        <tr>
-            <th>블록 박스 내에만 배치</th>
-            <th colspan="2">모든 박스 내 배치 <mark>가능</mark></th>
-        </tr>
-        <tr>
-            <th>옆에 다른 요소 배치 불가능</th>
-            <th colspan="2">옆에 다른 요소 배치 <mark>가능</mark></th>
-        </tr>
+    <div style="text-align: center;">
+        <div class="big">
+            <div class="title">block</div>
+            <div class="small">block</div>
+            <div class="small">block</div>
+            <div class="small">block</div>
+        </div>
         
-    </table>
+        <div class="big">
+            <div class="title">block</div>
+            <span class="inline">inline</span>
+            <span class="inline">inline</span>
+            <span class="inline">inline</span>
+        </div>
+        
+        <div class="big" >
+            <div class="title">block</div>
+            <span class="inline-box">inline-box</span>
+            <span class="inline-box">inline-box</span>
+            <span class="inline-box" style="display: inline;">inline-box (width, height 조절 X)</span>
+        </div>
+        <br>
+        <h1>3가지 박스 유형 비교</h1>
+        <hr>
+        <table border="1" style="text-align: center;">
+            <tr>
+                <th>블록 박스</th>
+                <th>인라인 박스</th>
+                <th>인라인 블록 박스</th>
+            </tr>
+            <tr>
+                <th>항상 새 라인에서 시작</th>
+                <th colspan="2">새 라인에서 시작 못함<br>라인 안(inline)에 있음</th>
+            </tr>
+            <tr>
+                <th>블록 박스 내에만 배치</th>
+                <th colspan="2"><mark>모든 박스 내 배치 가능</mark></th>
+            </tr>
+            <tr>
+                <th>옆에 다른 요소 배치 불가능</th>
+                <th colspan="2"><mark>옆에 다른 요소 배치 가능</mark></th>
+            </tr>
+            <tr>
+                <th><mark>width,height로 크기 조절 가능</mark></th>
+                <th>width,height로 크기 조절 불가능</th>
+                <th><mark>width,height로 크기 조절 가능</mark></th>
+            </tr>
+            <tr>
+                <th><mark>padding,border,margin 조절 가능</mark></th>
+                <th>padding,border,margin 조절 불가능</th>
+                <th><mark>padding,border,margin 조절 가능</mark></th>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
