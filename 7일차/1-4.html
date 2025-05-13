@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading">눌러보세영</h2>
+    <script>
+        const heading = document.getElementById("heading");
+        const colors = ["red","blue","yellow"];
+        let index = 0;
+
+        heading.onclick = function(){
+            heading.style.color = colors[index]
+            index = (index + 1) & colors.length
+        }
+    </script>
+</body>
+</html>
