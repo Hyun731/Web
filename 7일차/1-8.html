@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: rgb(149, 149, 149);
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            top:50%;
+            transition: 0.3s;
+            border-radius: 500px;
+        }
+        div:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 2px 8px 8px gray;
+            transition: 0.3s;
+        }
+        body{
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body style="text-align: left;" id="back">
+    <div id="c"></div>
+    <script>
+        const change = document.getElementById("c");
+        const back = document.getElementById("back")
+        const colors = ["yellow","gray"];
+        let index = 0;
+        let dl = 0;
+        change.onclick = function(){
+            change.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
+            if(dl == 0){
+                back.style.backgroundColor = "black"
+                dl = 1
+            }
+            else if(dl == 1){
+                back.style.backgroundColor = "white"
+                dl = 0
+            }
+        }
+    </script>
+</body>
+</html>
